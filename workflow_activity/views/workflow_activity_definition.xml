@@ -18,10 +18,10 @@
                 <attribute name="invisible">0</attribute>
             </notebook>
             <notebook position="inside">
-                <page name="mail_activity" >
+                <page name="mail_activity" attrs="{'invisible': [('model', '!=', 'mail.activity')]}">
                     <group>
                         <field name="model" invisible="1"/>
-                        <field name="workflow_activity_type_id" />
+                        <field name="workflow_activity_type_id" attrs="{'required': [('model', '=', 'mail.activity')]}"/>
                         <field name="activity_note"/>
                     </group>
                 </page>

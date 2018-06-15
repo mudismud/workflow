@@ -12,10 +12,6 @@ class ActivityDefinition(models.Model):
         'mail.activity.type', domain=[]
     )
     activity_note = fields.Text()
-    model = fields.Char(
-        related='model_id.model',
-        readonly=True,
-    )
 
     def _get_activity_values(self, vals, parent=False, plan=False, action=False
                              ):

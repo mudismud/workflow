@@ -35,6 +35,10 @@ class ActivityDefinition(models.Model):
         required=True,
         domain="[('id', 'in', model_ids)]"
     )
+    model = fields.Char(
+        related='model_id.model',
+        readonly=True,
+    )
     state = fields.Selection(
         [('draft', 'Draft'),
          ('active', 'Active'),
