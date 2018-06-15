@@ -22,7 +22,7 @@ class ActivityDefinition(models.Model):
     type_id = fields.Many2one(
         string='Workflow Type',
         comodel_name='workflow.type',
-        ondelete='restrict', index=True,
+        ondelete='restrict', index=True, required=True,
         help="Type of worklow this activity definition can be used in",
     )
     model_ids = fields.Many2many(

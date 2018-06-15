@@ -38,7 +38,7 @@
                             <field name="plan_definition_id"/>
                             <field name="direct_plan_definition_id"/>
                             <field name="activity_definition_id"/>
-                            <field name="type_id" invisible="1"/>
+                            <field name="type_id"/>
                             <field name="execute_plan_definition_id" domain="[('type_id', '=', type_id)]"/>
                         </group>
                     </group>

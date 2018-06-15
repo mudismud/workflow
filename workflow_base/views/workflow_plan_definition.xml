@@ -35,11 +35,11 @@
                 </header>
                 <sheet>
                     <h2>
-                        <field name="name" readonly="1"/>
+                        <field name="name"/>
                     </h2>
                     <group>
                         <field name="description"/>
-                        <field name="type_id" invisible="1"/>
+                        <field name="type_id"/>
                     </group>
                     <notebook>
                         <page string="Actions group list" name='actions'>

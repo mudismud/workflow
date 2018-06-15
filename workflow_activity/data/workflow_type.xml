@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Copyright 2017 Eficent Business and IT Consulting Services, S.L.
+    Copyright 2017 Creu Blanca
+    License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+-->
+
+<odoo>
+
+    <record id="activity_workflow" model="workflow.type">
+        <field name="name">Activity Workflow</field>
+        <field name="description">Activity workflows</field>
+        <field name="model_ids" eval="[(4, ref('mail.model_mail_activity'))]"/>
+    </record>
+
+</odoo>
