@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Copyright 2016 LasLabs Inc.
+    Copyright 2017 Eficent Business and IT Consulting Services, S.L.
+    Copyright 2017 Creu Blanca
+    License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl).
+-->
+
+<odoo>
+
+    <menuitem id="workflow_root"
+              name="Workflow"
+              sequence="10"
+              parent="base.menu_administration"
+              groups="group_workflow_viewer"/>
+
+</odoo>
